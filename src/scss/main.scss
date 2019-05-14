@@ -15,16 +15,24 @@ TABLE OF CONTENTS:
 
 /* 0. Reset ================================= */
 @import 'reset';
+@import 'media';
+
+
+$clcOrange: #DD5800;
+$clcBrown: #472716;
+$clcTan: #E7D3C4;
+$clcBlack: #262626;
+$clcWhite: #ffffff;
 
 
 /* 1. Main Layout ================================= */
 
-* {
+*{
 	box-sizing: border-box;
 }
 
 body {
-	background: #ccc;
+	background-color: $clcTan;
 }
 
 
@@ -32,72 +40,125 @@ body {
 
 /* 2. Content ================================= */
 
-.floating-box {
-	position: relative;
-	font-family: sans-serif;
-	width: 90%;
-	max-width: 500px;
-	margin: 140px auto;
-	padding: 30px 20px 30px 30px;
-	.foreground {
-		position: relative;
-		z-index: 2;
-		transform: translateZ(100px);
-	}
-	.background {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		left: 0;
-		top: 0;
-		background: white;
-		z-index: 1;
-		// perspective: 2000px;
-		transition: 0.2s;
-		transform: translateX(20px) perspective(600px) rotateY(15deg);
-	}
-	&:hover .background {
-		transform: translateX(-30px) perspective(600px) rotateY(-15deg);		
-	}
-	.logo {
-		position: absolute;
-		top: -30px;
-		width: 60px;
-		z-index: 2;
-		transform: translateZ(100px);
-		transition: 0.3s;
+header{
+	width: 100%;
+	height: auto;
+	background-image: url("../img/lee-campbell-512447-unsplash.jpg");
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
 
-		&:hover {
-			transform: rotate(-0.4turn)
-		}
-	}
-	h1 {
-		font-weight: 700;
-		font-size: 22pt;
-		margin: 15px 0;
-	}
-	p {
-		color: #777;
-		// margin: 10px 0;
-		line-height: 140%;
-	}
-	p.github {
-		font-size: 0.8em;
-		
-		a {
-			opacity: 0.2;
-			transition: 0.3s;
-			&:hover {
-				opacity: 1;
-				color: red;
+	nav{
+		background-color: $clcBlack;
+		opacity: .9;
+		height: auto;
+
+		.logo{
+			
+			background-color: white;
+			
+			
+			.clc-logo{
+				position: relative;
+				left:25%;
+				width:50%;
 			}
+			
+		}
+		
+		li{
+			text-align: center;
+			color:white;
+			margin-bottom:2%;
+			
 		}
 	}
-	code {
-		position: absolute;
-		top: 20px;
-		right: 20px;
-		font-size: 0.8em;
-		opacity: 0.2;
+
+	
+
+	.hdr-cta{
+
+		margin: 10% 0;
+
+
+			h1{
+				margin:0 auto;
+				width: 100%;
+				color:$clcWhite;
+				font-size: 1.5rem;
+				text-align: center;
+			}
+
+
 	}
+
+	.hdr-bttn{
+		width:100%;
+		display: flex;
+		justify-content: center;
+		margin: 10% 0;
+		
+		.bgBttn{
+			background-color: $clcOrange;
+			color: $clcWhite;
+			width:50%;
+			font-size: 1rem;
+			padding:2%;
+			border-radius: 5%;
+			border: 1px solid darkorange;
+		}
+	}
+}
+
+
+.body{
+	height: 100%;
+	margin: 5%;
+
+	.our-story-img{
+		 display: none;
+	}
+	
+	.our-story{
+
+		h1{
+			font-size: 1.3rem;
+			font-weight: bold;
+			color:$clcBrown;
+			text-align: center;
+		}
+		p{
+			margin:5%;
+			font-size:1.1rem;
+	
+		}
+	}
+}
+
+
+
+footer{
+	background-color: $clcBlack;
+	opacity: .9;
+	height: auto;
+	color:$clcWhite;
+	display: flex;
+	flex-direction: column;
+	
+	.footr{
+		margin:5%;
+		align-self: center;	
+		
+		h1{
+			text-align: center;
+			margin:10%;
+		}
+
+		li{
+			margin:5% 0;
+			color:$clcWhite;
+		}
+	}
+	
 }
