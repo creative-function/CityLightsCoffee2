@@ -1,0 +1,180 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+/* 0. Reset ================================= */
+@import 'reset';
+
+
+
+$clcOrange: #DD5800;
+$clcBrown: #472716;
+$clcTan: #E7D3C4;
+$clcBlack: #262626;
+$clcWhite: #ffffff;
+
+
+/* 1. Main Layout ================================= */
+
+*{
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $clcTan;
+}
+
+
+
+
+/* 2. Content ================================= */
+
+@media only screen and (min-width: 480px){
+
+    header{
+        width: 100%;
+        height: auto;
+        background-image: url("../img/lee-campbell-512447-unsplash.jpg");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    
+        nav{
+			display: flex;
+            background-color: $clcBlack;
+            opacity: .9;
+            height: auto;
+    
+            .logo{
+                
+                background-color: white;
+                width: 100%;
+                
+                .clc-logo{
+                    position: relative;
+                    width:50%;
+                }
+                
+            }
+			
+			ul{
+				width:100%;
+				li{
+					display: inline;
+					margin:5%;
+					text-align: center;
+					color:white;					
+				}
+			}
+
+        }
+    
+        
+    
+        .hdr-cta{
+    
+            margin: 10% 0;
+    
+    
+                h1{
+                    margin:0 auto;
+                    width: 100%;
+                    color:$clcWhite;
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+    
+    
+        }
+    
+        .hdr-bttn{
+            width:100%;
+            display: flex;
+            justify-content: center;
+            margin: 10% 0;
+            
+            .bgBttn{
+                background-color: $clcOrange;
+                color: $clcWhite;
+                width:50%;
+                font-size: 1rem;
+                padding:2%;
+                border-radius: 5%;
+                border: 1px solid darkorange;
+            }
+        }
+    }
+    
+    
+    .body{
+        
+		display: flex;
+		
+    
+        .our-story-img{
+			display: block;
+			width: 50%;
+
+			 img{
+				 width:100%;
+			 }
+        }
+        
+        .our-story-txt{
+            width: 75%;
+			
+            h1{
+                font-size: 1.3rem;
+                font-weight: bold;
+                color:$clcBrown;
+				text-align: center;
+				margin: 5%;
+            }
+            p{
+                margin: 5%;
+                font-size:1rem;
+        
+            }
+        }
+    }
+    
+    
+    
+    footer{
+        background-color: $clcBlack;
+        opacity: .9;
+        height: auto;
+        color:$clcWhite;
+        display: flex;
+        flex-direction: column;
+        
+        .footr{
+            margin:5%;
+            align-self: center;	
+            
+            h1{
+                text-align: center;
+                margin:10%;
+            }
+    
+            li{
+                margin:5% 0;
+                color:$clcWhite;
+            }
+        }
+        
+    }
+
+}
