@@ -106,7 +106,7 @@ header nav .logo .clc-logo {
 	width: 50%;
 }
 
-header nav li {
+header nav ul li {
 	text-align: center;
 	color: white;
 	margin-bottom: 2%;
@@ -118,7 +118,7 @@ header .hdr-cta {
 
 header .hdr-cta h1 {
 	margin: 0 auto;
-	width: 100%;
+	width: 45%;
 	color: #ffffff;
 	font-size: 1.5rem;
 	text-align: center;
@@ -143,24 +143,24 @@ header .hdr-bttn .bgBttn {
 	border: 1px solid darkorange;
 }
 
-.body {
+.clc-body {
 	height: 100%;
-	margin: 5%;
 }
 
-.body .our-story-img {
+.clc-body .our-story-img {
 	display: none;
 }
 
-.body .our-story h1 {
+.clc-body .our-story h1 {
 	font-size: 1.3rem;
 	font-weight: bold;
 	color: #472716;
 	text-align: center;
+	margin: 10%;
 }
 
-.body .our-story p {
-	margin: 5%;
+.clc-body .our-story p {
+	margin: 6%;
 	font-size: 1.1rem;
 }
 
@@ -189,6 +189,124 @@ footer .footr h1 {
 footer .footr li {
 	margin: 5% 0;
 	color: #ffffff;
+}
+
+@media only screen and (min-width: 600px) {
+	header {
+		width: 100%;
+		height: auto;
+		background-image: url("../img/lee-campbell-512447-unsplash.jpg");
+		background-size: cover;
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		        flex-direction: column;
+		align-content: center;
+	}
+	header nav {
+		background-color: #262626;
+		opacity: .9;
+		height: auto;
+		display: -webkit-box;
+		display: flex;
+	}
+	header nav .logo {
+		background-color: white;
+		width: 50%;
+	}
+	header nav .logo .clc-logo {
+		position: relative;
+		left: 0%;
+		width: 50%;
+	}
+	header nav ul {
+		width: 50%;
+	}
+	header nav ul li {
+		text-align: center;
+		color: white;
+		margin: 5%;
+		display: inline;
+		float: left;
+	}
+	header .hdr-cta {
+		margin: 10% 0;
+	}
+	header .hdr-cta h1 {
+		margin: 15% auto;
+		width: 100%;
+		color: #ffffff;
+		font-size: 2rem;
+		text-align: center;
+	}
+	header .hdr-bttn {
+		width: 100%;
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-pack: center;
+		        justify-content: center;
+		margin: 10% 0;
+	}
+	header .hdr-bttn .bgBttn {
+		background-color: #DD5800;
+		color: #ffffff;
+		width: 50%;
+		font-size: 1rem;
+		padding: 2%;
+		border-radius: 5%;
+		border: 1px solid darkorange;
+	}
+	.clc-body {
+		display: -webkit-box;
+		display: flex;
+	}
+	.clc-body .our-story-img {
+		display: block;
+		width: 50%;
+		height: 340px;
+		background-image: url(/dist/img/latteCloseup.jpg);
+		background-size: cover;
+	}
+	.clc-body .our-story {
+		width: 50%;
+	}
+	.clc-body .our-story h1 {
+		font-size: 1.3rem;
+		font-weight: bold;
+		color: #472716;
+		text-align: center;
+		margin: 10%;
+	}
+	.clc-body .our-story p {
+		margin: 6%;
+		font-size: 1rem;
+	}
+	footer {
+		background-color: #262626;
+		opacity: .9;
+		height: auto;
+		color: #ffffff;
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		        flex-direction: row;
+		-webkit-box-pack: space-evenly;
+		        justify-content: space-evenly;
+	}
+	footer .footr {
+		margin: 5%;
+		align-self: center;
+	}
+	footer .footr h1 {
+		text-align: center;
+		margin: 10%;
+	}
+	footer .footr li {
+		margin: 5% 0;
+		color: #ffffff;
+	}
 }
 
 /*# sourceMappingURL=main.css.map */

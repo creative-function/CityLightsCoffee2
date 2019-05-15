@@ -66,13 +66,17 @@ header{
 			}
 			
 		}
-		
-		li{
-			text-align: center;
-			color:white;
-			margin-bottom:2%;
-			
+
+		ul{
+			li{
+				text-align: center;
+				color:white;
+				margin-bottom:2%;
+				
+			}
+
 		}
+		
 	}
 
 	
@@ -84,10 +88,11 @@ header{
 
 			h1{
 				margin:0 auto;
-				width: 100%;
+				width: 45%;
 				color:$clcWhite;
 				font-size: 1.5rem;
 				text-align: center;
+				
 			}
 
 
@@ -112,9 +117,9 @@ header{
 }
 
 
-.body{
+.clc-body{
 	height: 100%;
-	margin: 5%;
+	
 
 	.our-story-img{
 		 display: none;
@@ -127,9 +132,10 @@ header{
 			font-weight: bold;
 			color:$clcBrown;
 			text-align: center;
+			margin:10%;
 		}
 		p{
-			margin:5%;
+			margin:6%;
 			font-size:1.1rem;
 	
 		}
@@ -162,3 +168,137 @@ footer{
 	}
 	
 }
+
+
+
+@media only screen and (min-width: 600px) {
+
+	header{
+		width: 100%;
+		height: auto;
+		background-image: url("../img/lee-campbell-512447-unsplash.jpg");
+		background-size: cover;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+	
+		nav{
+			background-color: $clcBlack;
+			opacity: .9;
+			height: auto;
+			display: flex;
+	
+			.logo{
+				background-color: white;
+				width:50%;
+		
+				.clc-logo{
+					position: relative;
+					left:0%;
+					width:50%;
+				}
+			}
+			
+			ul{
+				width: 50%;
+
+				li{
+					text-align: center;
+					color:white;
+					margin:5%;
+					display: inline;
+					float: left;
+					
+				}
+
+			}
+		}
+
+		.hdr-cta{
+			margin: 10% 0;
+	
+			h1{
+				margin:15% auto;
+				width: 100%;
+				color:$clcWhite;
+				font-size: 2rem;
+				text-align: center;
+				
+			}
+		}
+	
+		.hdr-bttn{
+			width:100%;
+			display: flex;
+			justify-content: center;
+			margin: 10% 0;
+			
+			.bgBttn{
+				background-color: $clcOrange;
+				color: $clcWhite;
+				width:50%;
+				font-size: 1rem;
+				padding:2%;
+				border-radius: 5%;
+				border: 1px solid darkorange;
+			}
+		}
+	}
+	
+	.clc-body{
+		display: flex;
+	
+		.our-story-img{
+		 display: block;
+		 width: 50%;
+		 height: 340px;
+		 background-image: url(/dist/img/latteCloseup.jpg);
+		 background-size: cover; 
+			
+		}
+		
+		.our-story{
+			width: 50%;
+
+			h1{
+				font-size: 1.3rem;
+				font-weight: bold;
+				color:$clcBrown;
+				text-align: center;
+				margin:10%;
+			}
+			
+			p{
+				margin:6%;
+				font-size:1rem;
+		
+			}
+		}
+	}
+	
+	footer{
+		background-color: $clcBlack;
+		opacity: .9;
+		height: auto;
+		color:$clcWhite;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+			
+		.footr{
+			margin:5%;
+			align-self: center;	
+			
+			h1{
+				text-align: center;
+				margin:10%;
+			}
+
+			li{
+				margin:5% 0;
+				color:$clcWhite;
+			}
+		}
+			
+		}
+	}
