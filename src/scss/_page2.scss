@@ -1,4 +1,102 @@
 //PAGE 2
+header{
+	width: 100%;
+	height: auto;
+	background-image: url("../img/mike-kenneally-46284-unsplash.jpg");
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+
+	nav{
+		background-color: $clcBlack;
+		opacity: .9;
+		height: auto;
+
+		@media #{$tablet}{
+			display: flex;
+		}
+
+		.logo{
+			background-color: white;
+
+			@media #{$tablet}{
+				width: 50%;
+			}
+	
+			.clc-logo{
+				position: relative;
+				left:25%;
+				width:50%;
+
+				@media #{$tablet}{
+					left:0%;
+				}
+			}
+			
+		}
+
+		ul{
+			@media #{$tablet}{
+				width: 50%;
+			}
+
+			li{
+				text-align: center;
+				color:white;
+				margin-bottom:2%;
+
+				@media #{$tablet}{
+					margin:5%;
+					display: inline;
+					float: left;
+				}
+				
+			}
+
+		}
+		
+	}
+
+
+	.hdr-cta{
+		margin: 10% 0;
+
+		h1{
+			margin:0 auto;
+			width: 45%;
+			color:$clcWhite;
+			font-size: 1.5rem;
+			text-align: center;	
+
+			@media #{$tablet}{
+				width:100%;
+				font-size: 2rem;
+			}
+		}
+	}
+
+	.hdr-bttn{
+		width:100%;
+		display: flex;
+		justify-content: center;
+		margin: 10% 0;
+		
+		.bgBttn{
+			background-color: $clcOrange;
+			color: $clcWhite;
+			width:50%;
+			font-size: 1rem;
+			padding:2%;
+			border-radius: 5%;
+			border: 1px solid darkorange;
+
+			@media #{$tablet}{
+				width:25%;
+			}
+		}
+	}
+}
 
 .clc-drinks{
 	 
@@ -14,7 +112,7 @@
 
 		.img-drinks{
 			
-			background-color: aqua;
+			background-color: rgb(25, 0, 255)43, 225, 225);
 	
 			img{
 				
