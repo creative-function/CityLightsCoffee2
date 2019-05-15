@@ -67,6 +67,48 @@ table {
 	border-spacing: 0;
 }
 
+.clc-drinks {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	margin: 5%;
+}
+
+.clc-drinks .menu-item {
+	background-color: yellow;
+	width: 100%;
+}
+
+.clc-drinks .menu-item .img-drinks {
+	background-color: aqua;
+}
+
+.clc-drinks .menu-item .img-drinks img {
+	width: 100%;
+}
+
+.clc-drinks .menu-item .ul-drinks {
+	margin: 3%;
+	padding: 2%;
+	background-color: plum;
+}
+
+.clc-drinks .menu-item .ul-drinks h1 {
+	text-align: center;
+	margin: 2%;
+	font-size: 1.5rem;
+}
+
+.clc-drinks .menu-item .ul-drinks ul li {
+	margin: 4%;
+}
+
+.clc-drinks .menu-item .ul-drinks ul li .price {
+	float: right;
+}
+
 /* 1. Main Layout ================================= */
 * {
 	box-sizing: border-box;
@@ -96,8 +138,21 @@ header nav {
 	height: auto;
 }
 
+@media (min-width: 600px) and (max-width: 1023px) {
+	header nav {
+		display: -webkit-box;
+		display: flex;
+	}
+}
+
 header nav .logo {
 	background-color: white;
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+	header nav .logo {
+		width: 50%;
+	}
 }
 
 header nav .logo .clc-logo {
@@ -106,10 +161,30 @@ header nav .logo .clc-logo {
 	width: 50%;
 }
 
+@media (min-width: 600px) and (max-width: 1023px) {
+	header nav .logo .clc-logo {
+		left: 0%;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+	header nav ul {
+		width: 50%;
+	}
+}
+
 header nav ul li {
 	text-align: center;
 	color: white;
 	margin-bottom: 2%;
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+	header nav ul li {
+		margin: 5%;
+		display: inline;
+		float: left;
+	}
 }
 
 header .hdr-cta {
@@ -122,6 +197,13 @@ header .hdr-cta h1 {
 	color: #ffffff;
 	font-size: 1.5rem;
 	text-align: center;
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+	header .hdr-cta h1 {
+		width: 100%;
+		font-size: 2rem;
+	}
 }
 
 header .hdr-bttn {
@@ -143,12 +225,41 @@ header .hdr-bttn .bgBttn {
 	border: 1px solid darkorange;
 }
 
+@media (min-width: 600px) and (max-width: 1023px) {
+	header .hdr-bttn .bgBttn {
+		width: 25%;
+	}
+}
+
 .clc-body {
 	height: 100%;
 }
 
+@media (min-width: 600px) and (max-width: 1023px) {
+	.clc-body {
+		display: -webkit-box;
+		display: flex;
+	}
+}
+
 .clc-body .our-story-img {
 	display: none;
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+	.clc-body .our-story-img {
+		display: block;
+		width: 50%;
+		height: 340px;
+		background-image: url(/dist/img/latteCloseup.jpg);
+		background-size: cover;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+	.clc-body .our-story {
+		width: 50%;
+	}
 }
 
 .clc-body .our-story h1 {
@@ -161,7 +272,7 @@ header .hdr-bttn .bgBttn {
 
 .clc-body .our-story p {
 	margin: 6%;
-	font-size: 1.1rem;
+	font-size: 1rem;
 }
 
 footer {
@@ -174,6 +285,18 @@ footer {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	        flex-direction: column;
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+	footer {
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		        flex-direction: row;
+		-webkit-box-pack: space-evenly;
+		        justify-content: space-evenly;
+	}
 }
 
 footer .footr {
@@ -189,124 +312,6 @@ footer .footr h1 {
 footer .footr li {
 	margin: 5% 0;
 	color: #ffffff;
-}
-
-@media only screen and (min-width: 600px) {
-	header {
-		width: 100%;
-		height: auto;
-		background-image: url("../img/lee-campbell-512447-unsplash.jpg");
-		background-size: cover;
-		display: -webkit-box;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		        flex-direction: column;
-		align-content: center;
-	}
-	header nav {
-		background-color: #262626;
-		opacity: .9;
-		height: auto;
-		display: -webkit-box;
-		display: flex;
-	}
-	header nav .logo {
-		background-color: white;
-		width: 50%;
-	}
-	header nav .logo .clc-logo {
-		position: relative;
-		left: 0%;
-		width: 50%;
-	}
-	header nav ul {
-		width: 50%;
-	}
-	header nav ul li {
-		text-align: center;
-		color: white;
-		margin: 5%;
-		display: inline;
-		float: left;
-	}
-	header .hdr-cta {
-		margin: 10% 0;
-	}
-	header .hdr-cta h1 {
-		margin: 15% auto;
-		width: 100%;
-		color: #ffffff;
-		font-size: 2rem;
-		text-align: center;
-	}
-	header .hdr-bttn {
-		width: 100%;
-		display: -webkit-box;
-		display: flex;
-		-webkit-box-pack: center;
-		        justify-content: center;
-		margin: 10% 0;
-	}
-	header .hdr-bttn .bgBttn {
-		background-color: #DD5800;
-		color: #ffffff;
-		width: 50%;
-		font-size: 1rem;
-		padding: 2%;
-		border-radius: 5%;
-		border: 1px solid darkorange;
-	}
-	.clc-body {
-		display: -webkit-box;
-		display: flex;
-	}
-	.clc-body .our-story-img {
-		display: block;
-		width: 50%;
-		height: 340px;
-		background-image: url(/dist/img/latteCloseup.jpg);
-		background-size: cover;
-	}
-	.clc-body .our-story {
-		width: 50%;
-	}
-	.clc-body .our-story h1 {
-		font-size: 1.3rem;
-		font-weight: bold;
-		color: #472716;
-		text-align: center;
-		margin: 10%;
-	}
-	.clc-body .our-story p {
-		margin: 6%;
-		font-size: 1rem;
-	}
-	footer {
-		background-color: #262626;
-		opacity: .9;
-		height: auto;
-		color: #ffffff;
-		display: -webkit-box;
-		display: flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		        flex-direction: row;
-		-webkit-box-pack: space-evenly;
-		        justify-content: space-evenly;
-	}
-	footer .footr {
-		margin: 5%;
-		align-self: center;
-	}
-	footer .footr h1 {
-		text-align: center;
-		margin: 10%;
-	}
-	footer .footr li {
-		margin: 5% 0;
-		color: #ffffff;
-	}
 }
 
 /*# sourceMappingURL=main.css.map */

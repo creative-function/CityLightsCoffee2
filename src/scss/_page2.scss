@@ -1,0 +1,52 @@
+//PAGE 2
+
+.clc-drinks{
+	 
+	display: flex;
+	flex-direction: column;
+	margin: 5%;
+
+	.menu-item{
+		
+		background-color: yellow;
+		width: 100%;
+		
+
+		.img-drinks{
+			
+			background-color: aqua;
+	
+			img{
+				
+				width: 100%;
+			}
+		}
+	
+		.ul-drinks{
+			margin:3%;
+			padding: 2%;
+			background-color: plum;
+
+			h1{
+				text-align: center;
+				margin:2%;
+				font-size: 1.5rem;
+			}
+
+			ul{
+
+				li{
+					margin:4%;
+
+					.price{
+						float: right;
+					}
+				}
+			}
+
+	
+			
+		}
+	}
+
+}
