@@ -15,22 +15,20 @@ TABLE OF CONTENTS:
 
 /* 0. Reset ================================= */
 @import 'reset';
+@import 'variables';
 @import 'media';
 @import 'page2';
 
-$clcOrange: #DD5800;
-$clcBrown: #472716;
-$clcTan: #E7D3C4;
-$clcBlack: #262626;
-$clcWhite: #ffffff;
-
-$tablet: "(min-width: 600px) and (max-width: 1023px)";
-$desktop: "(min-width: 1024px)";
 
 /* 1. Main Layout ================================= */
 
 *{
 	box-sizing: border-box;
+}
+
+html{
+	min-height: 100%;
+	background-color: $clcBlack;
 }
 
 body {
@@ -42,27 +40,27 @@ body {
 
 /* 2. Content ================================= */
 
+
 header{
 	width: 100%;
 	height: auto;
-	background-image: url("../img/lee-campbell-512447-unsplash.jpg");
-	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	align-content: center;
-
+	background-color: none;
+	position: absolute;
+	z-index: 1;
+	
 	nav{
-		background-color: $clcBlack;
-		opacity: .9;
+		background-color: $clcBlack; opacity: .9;
 		height: auto;
+		width:100%;
 
 		@media #{$tablet}{
 			display: flex;
 		}
 
 		.logo{
-			background-color: white;
-
 			@media #{$tablet}{
 				width: 50%;
 			}
@@ -70,7 +68,7 @@ header{
 			.clc-logo{
 				position: relative;
 				left:25%;
-				width:50%;
+				width:55%;
 
 				@media #{$tablet}{
 					left:0%;
@@ -80,6 +78,10 @@ header{
 		}
 
 		ul{
+		
+			margin-bottom:5%;
+			line-height: 1.8rem;
+			
 			@media #{$tablet}{
 				width: 50%;
 			}
@@ -100,16 +102,25 @@ header{
 		}
 		
 	}
+}
 
-
+.cta-wrapper{
+	width:100%;
+	height: 450px;
+	background-image: url("../img/lee-campbell-512447-unsplash.jpg");
+	background-size: cover;
+	position: relative;
+	top:0px;
+	
 	.hdr-cta{
-		margin: 10% 0;
+		position: relative;
+		width:100%;
+		top:50%;
 
 		h1{
-			margin:0 auto;
-			width: 45%;
+			width: 100%;
 			color:$clcWhite;
-			font-size: 1.5rem;
+			font-size: 1rem;
 			text-align: center;	
 
 			@media #{$tablet}{
@@ -117,29 +128,31 @@ header{
 				font-size: 2rem;
 			}
 		}
-	}
 
-	.hdr-bttn{
-		width:100%;
-		display: flex;
-		justify-content: center;
-		margin: 10% 0;
-		
-		.bgBttn{
-			background-color: $clcOrange;
-			color: $clcWhite;
-			width:50%;
-			font-size: 1rem;
-			padding:2%;
-			border-radius: 5%;
-			border: 1px solid darkorange;
-
-			@media #{$tablet}{
-				width:25%;
+		.hdr-bttn{
+			width:100%;
+			display: flex;
+			justify-content: center;
+			margin: 10% 0;
+			
+			.bgBttn{
+				background-color: $clcOrange;
+				color: $clcWhite;
+				width:50%;
+				font-size: 1rem;
+				padding:2%;
+				border-radius: 5%;
+				border: 1px solid darkorange;
+	
+				@media #{$tablet}{
+					width:25%;
+				}
 			}
-		}
+		}	
 	}
+	
 }
+
 
 
 .clc-body{
@@ -188,15 +201,26 @@ header{
 footer{
 	background-color: $clcBlack;
 	opacity: .9;
+	width:100%;
 	height: auto;
 	color:$clcWhite;
 	display: flex;
 	flex-direction: column;
+	// position: absolute;
+	// bottom:0;
 	
 	@media #{$tablet}{
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
+	}
+
+	@media #{$desktop}{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		position: relative;
+		bottom:0;
 	}
 
 	.footr{

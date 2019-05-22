@@ -1,9 +1,8 @@
+
 //// imported PAGE 2
 header{
 	width: 100%;
 	height: auto;
-	background-image: url("../img/mike-kenneally-46284-unsplash.jpg");
-	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	align-content: center;
@@ -18,8 +17,8 @@ header{
 		}
 
 		.logo{
-			background-color: white;
-
+			
+			width:100%;
 			@media #{$tablet}{
 				width: 50%;
 			}
@@ -27,7 +26,7 @@ header{
 			.clc-logo{
 				position: relative;
 				left:25%;
-				width:50%;
+				width:100%;
 
 				@media #{$tablet}{
 					left:0%;
@@ -112,7 +111,7 @@ header{
 
 		.img-drinks{
 			
-			background-color: rgb(25, 0, 255)43, 225, 225);
+			background-color: $clcWhite;
 	
 			img{
 				
@@ -141,8 +140,6 @@ header{
 					}
 				}
 			}
-
-	
 			
 		}
 	}

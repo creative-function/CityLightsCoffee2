@@ -67,63 +67,9 @@ table {
 	border-spacing: 0;
 }
 
-.clc-drinks {
-	display: -webkit-box;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	        flex-direction: column;
-	margin: 5%;
-}
-
-.clc-drinks .menu-item {
-	background-color: yellow;
-	width: 100%;
-}
-
-.clc-drinks .menu-item .img-drinks {
-	background-color: aqua;
-}
-
-.clc-drinks .menu-item .img-drinks img {
-	width: 100%;
-}
-
-.clc-drinks .menu-item .ul-drinks {
-	margin: 3%;
-	padding: 2%;
-	background-color: plum;
-}
-
-.clc-drinks .menu-item .ul-drinks h1 {
-	text-align: center;
-	margin: 2%;
-	font-size: 1.5rem;
-}
-
-.clc-drinks .menu-item .ul-drinks ul li {
-	margin: 4%;
-}
-
-.clc-drinks .menu-item .ul-drinks ul li .price {
-	float: right;
-}
-
-/* 1. Main Layout ================================= */
-* {
-	box-sizing: border-box;
-}
-
-body {
-	background-color: #E7D3C4;
-}
-
-/* 2. Content ================================= */
 header {
 	width: 100%;
 	height: auto;
-	background-image: url("../img/lee-campbell-512447-unsplash.jpg");
-	background-size: cover;
 	display: -webkit-box;
 	display: flex;
 	-webkit-box-orient: vertical;
@@ -138,7 +84,7 @@ header nav {
 	height: auto;
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 600px) {
 	header nav {
 		display: -webkit-box;
 		display: flex;
@@ -146,10 +92,10 @@ header nav {
 }
 
 header nav .logo {
-	background-color: white;
+	width: 100%;
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 600px) {
 	header nav .logo {
 		width: 50%;
 	}
@@ -158,16 +104,16 @@ header nav .logo {
 header nav .logo .clc-logo {
 	position: relative;
 	left: 25%;
-	width: 50%;
+	width: 100%;
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 600px) {
 	header nav .logo .clc-logo {
 		left: 0%;
 	}
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 600px) {
 	header nav ul {
 		width: 50%;
 	}
@@ -179,7 +125,7 @@ header nav ul li {
 	margin-bottom: 2%;
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 600px) {
 	header nav ul li {
 		margin: 5%;
 		display: inline;
@@ -199,7 +145,7 @@ header .hdr-cta h1 {
 	text-align: center;
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 600px) {
 	header .hdr-cta h1 {
 		width: 100%;
 		font-size: 2rem;
@@ -225,8 +171,188 @@ header .hdr-bttn .bgBttn {
 	border: 1px solid darkorange;
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 600px) {
 	header .hdr-bttn .bgBttn {
+		width: 25%;
+	}
+}
+
+.clc-drinks {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	margin: 5%;
+}
+
+.clc-drinks .menu-item {
+	width: 100%;
+}
+
+.clc-drinks .menu-item .img-drinks {
+	background-color: #ffffff;
+}
+
+.clc-drinks .menu-item .img-drinks img {
+	width: 100%;
+}
+
+.clc-drinks .menu-item .ul-drinks {
+	margin: 3%;
+	padding: 2%;
+}
+
+.clc-drinks .menu-item .ul-drinks h1 {
+	text-align: center;
+	margin: 2%;
+	font-size: 1.5rem;
+}
+
+.clc-drinks .menu-item .ul-drinks ul li {
+	margin: 4%;
+}
+
+.clc-drinks .menu-item .ul-drinks ul li .price {
+	float: right;
+}
+
+/* 1. Main Layout ================================= */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	min-height: 100%;
+	background-color: #262626;
+}
+
+body {
+	background-color: #E7D3C4;
+}
+
+/* 2. Content ================================= */
+header {
+	width: 100%;
+	height: auto;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	align-content: center;
+	background-color: none;
+	position: absolute;
+	z-index: 1;
+}
+
+header nav {
+	background-color: #262626;
+	opacity: .9;
+	height: auto;
+	width: 100%;
+}
+
+@media (min-width: 600px) {
+	header nav {
+		display: -webkit-box;
+		display: flex;
+	}
+}
+
+@media (min-width: 600px) {
+	header nav .logo {
+		width: 50%;
+	}
+}
+
+header nav .logo .clc-logo {
+	position: relative;
+	left: 25%;
+	width: 55%;
+}
+
+@media (min-width: 600px) {
+	header nav .logo .clc-logo {
+		left: 0%;
+	}
+}
+
+header nav ul {
+	margin-bottom: 5%;
+	line-height: 1.8rem;
+}
+
+@media (min-width: 600px) {
+	header nav ul {
+		width: 50%;
+	}
+}
+
+header nav ul li {
+	text-align: center;
+	color: white;
+	margin-bottom: 2%;
+}
+
+@media (min-width: 600px) {
+	header nav ul li {
+		margin: 5%;
+		display: inline;
+		float: left;
+	}
+}
+
+.cta-wrapper {
+	width: 100%;
+	height: 450px;
+	background-image: url("../img/lee-campbell-512447-unsplash.jpg");
+	background-size: cover;
+	position: relative;
+	top: 0px;
+}
+
+.cta-wrapper .hdr-cta {
+	position: relative;
+	width: 100%;
+	top: 50%;
+}
+
+.cta-wrapper .hdr-cta h1 {
+	width: 100%;
+	color: #ffffff;
+	font-size: 1rem;
+	text-align: center;
+}
+
+@media (min-width: 600px) {
+	.cta-wrapper .hdr-cta h1 {
+		width: 100%;
+		font-size: 2rem;
+	}
+}
+
+.cta-wrapper .hdr-cta .hdr-bttn {
+	width: 100%;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: center;
+	        justify-content: center;
+	margin: 10% 0;
+}
+
+.cta-wrapper .hdr-cta .hdr-bttn .bgBttn {
+	background-color: #DD5800;
+	color: #ffffff;
+	width: 50%;
+	font-size: 1rem;
+	padding: 2%;
+	border-radius: 5%;
+	border: 1px solid darkorange;
+}
+
+@media (min-width: 600px) {
+	.cta-wrapper .hdr-cta .hdr-bttn .bgBttn {
 		width: 25%;
 	}
 }
@@ -235,7 +361,7 @@ header .hdr-bttn .bgBttn {
 	height: 100%;
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 600px) {
 	.clc-body {
 		display: -webkit-box;
 		display: flex;
@@ -246,7 +372,7 @@ header .hdr-bttn .bgBttn {
 	display: none;
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 600px) {
 	.clc-body .our-story-img {
 		display: block;
 		width: 50%;
@@ -256,7 +382,7 @@ header .hdr-bttn .bgBttn {
 	}
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 600px) {
 	.clc-body .our-story {
 		width: 50%;
 	}
@@ -278,6 +404,7 @@ header .hdr-bttn .bgBttn {
 footer {
 	background-color: #262626;
 	opacity: .9;
+	width: 100%;
 	height: auto;
 	color: #ffffff;
 	display: -webkit-box;
@@ -287,7 +414,7 @@ footer {
 	        flex-direction: column;
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 600px) {
 	footer {
 		display: -webkit-box;
 		display: flex;
@@ -296,6 +423,20 @@ footer {
 		        flex-direction: row;
 		-webkit-box-pack: space-evenly;
 		        justify-content: space-evenly;
+	}
+}
+
+@media (min-width: 1024px) {
+	footer {
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		        flex-direction: row;
+		-webkit-box-pack: space-evenly;
+		        justify-content: space-evenly;
+		position: relative;
+		bottom: 0;
 	}
 }
 
