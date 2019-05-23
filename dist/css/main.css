@@ -76,173 +76,7 @@ header {
 	-webkit-box-direction: normal;
 	        flex-direction: column;
 	align-content: center;
-}
-
-header nav {
-	background-color: #262626;
-	opacity: .9;
-	height: auto;
-}
-
-@media (min-width: 600px) {
-	header nav {
-		display: -webkit-box;
-		display: flex;
-	}
-}
-
-header nav .logo {
-	width: 100%;
-}
-
-@media (min-width: 600px) {
-	header nav .logo {
-		width: 50%;
-	}
-}
-
-header nav .logo .clc-logo {
-	position: relative;
-	left: 25%;
-	width: 100%;
-}
-
-@media (min-width: 600px) {
-	header nav .logo .clc-logo {
-		left: 0%;
-	}
-}
-
-@media (min-width: 600px) {
-	header nav ul {
-		width: 50%;
-	}
-}
-
-header nav ul li {
-	text-align: center;
-	color: white;
-	margin-bottom: 2%;
-}
-
-@media (min-width: 600px) {
-	header nav ul li {
-		margin: 5%;
-		display: inline;
-		float: left;
-	}
-}
-
-header .hdr-cta {
-	margin: 10% 0;
-}
-
-header .hdr-cta h1 {
-	margin: 0 auto;
-	width: 45%;
-	color: #ffffff;
-	font-size: 1.5rem;
-	text-align: center;
-}
-
-@media (min-width: 600px) {
-	header .hdr-cta h1 {
-		width: 100%;
-		font-size: 2rem;
-	}
-}
-
-header .hdr-bttn {
-	width: 100%;
-	display: -webkit-box;
-	display: flex;
-	-webkit-box-pack: center;
-	        justify-content: center;
-	margin: 10% 0;
-}
-
-header .hdr-bttn .bgBttn {
-	background-color: #DD5800;
-	color: #ffffff;
-	width: 50%;
-	font-size: 1rem;
-	padding: 2%;
-	border-radius: 5%;
-	border: 1px solid darkorange;
-}
-
-@media (min-width: 600px) {
-	header .hdr-bttn .bgBttn {
-		width: 25%;
-	}
-}
-
-.clc-drinks {
-	display: -webkit-box;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	        flex-direction: column;
-	margin: 5%;
-}
-
-.clc-drinks .menu-item {
-	width: 100%;
-}
-
-.clc-drinks .menu-item .img-drinks {
-	background-color: #ffffff;
-}
-
-.clc-drinks .menu-item .img-drinks img {
-	width: 100%;
-}
-
-.clc-drinks .menu-item .ul-drinks {
-	margin: 3%;
-	padding: 2%;
-}
-
-.clc-drinks .menu-item .ul-drinks h1 {
-	text-align: center;
-	margin: 2%;
-	font-size: 1.5rem;
-}
-
-.clc-drinks .menu-item .ul-drinks ul li {
-	margin: 4%;
-}
-
-.clc-drinks .menu-item .ul-drinks ul li .price {
-	float: right;
-}
-
-/* 1. Main Layout ================================= */
-* {
-	box-sizing: border-box;
-}
-
-html {
-	min-height: 100%;
-	background-color: #262626;
-}
-
-body {
-	background-color: #E7D3C4;
-}
-
-/* 2. Content ================================= */
-header {
-	width: 100%;
-	height: auto;
-	display: -webkit-box;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	        flex-direction: column;
-	align-content: center;
 	background-color: none;
-	position: absolute;
 	z-index: 1;
 }
 
@@ -267,42 +101,173 @@ header nav {
 }
 
 header nav .logo .clc-logo {
-	position: relative;
-	left: 25%;
-	width: 55%;
+	margin: 0 29%;
+	width: 40%;
 }
 
 @media (min-width: 600px) {
 	header nav .logo .clc-logo {
-		left: 0%;
+		margin: 3%;
+		width: 35%;
+	}
+}
+
+@media (min-width: 1024px) {
+	header nav .logo .clc-logo {
+		width: 30%;
+	}
+}
+
+@media (min-width: 1360px) {
+	header nav .logo .clc-logo {
+		width: 25%;
 	}
 }
 
 header nav ul {
-	margin-bottom: 5%;
-	line-height: 1.8rem;
+	font-size: 1.2rem;
+	font-family: "Zilla Slab", serif;
+	font-weight: lighter;
+	margin: 2%;
 }
 
 @media (min-width: 600px) {
 	header nav ul {
 		width: 50%;
+		display: -webkit-box;
+		display: flex;
+		justify-content: space-around;
 	}
 }
 
+@media (min-width: 1024px) {
+	header nav ul {
+		-webkit-box-pack: justify;
+		        justify-content: space-between;
+	}
+}
+
+@media (min-width: 1024px) {
+	header nav ul {
+		-webkit-box-pack: space-evenly;
+		        justify-content: space-evenly;
+	}
+}
+
+header nav ul a {
+	text-decoration: none;
+}
+
 header nav ul li {
+	margin-bottom: 5%;
 	text-align: center;
 	color: white;
-	margin-bottom: 2%;
 }
 
 @media (min-width: 600px) {
 	header nav ul li {
-		margin: 5%;
-		display: inline;
-		float: left;
+		border-bottom: 1px solid white;
 	}
 }
 
+/* Page 2. Content ================================= */
+/* *. header & nav see @import header ========= */
+.clc-drinks {
+	margin-top: 20%;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	margin: 5%;
+}
+
+@media (min-width: 600px) {
+	.clc-drinks {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		        flex-direction: column;
+		-webkit-box-pack: space-evenly;
+		        justify-content: space-evenly;
+	}
+}
+
+.clc-drinks .menu-item {
+	width: 100%;
+}
+
+@media (min-width: 600px) {
+	.clc-drinks .menu-item {
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		        flex-direction: row;
+	}
+}
+
+.clc-drinks .menu-item .img-drinks {
+	background-color: #ffffff;
+}
+
+@media (min-width: 600px) {
+	.clc-drinks .menu-item .img-drinks {
+		width: 50%;
+	}
+}
+
+.clc-drinks .menu-item .img-drinks img {
+	width: 100%;
+}
+
+.clc-drinks .menu-item .ul-drinks {
+	margin: 3%;
+	padding: 2%;
+}
+
+@media (min-width: 600px) {
+	.clc-drinks .menu-item .ul-drinks {
+		width: 50%;
+		margin: 0%;
+	}
+}
+
+.clc-drinks .menu-item .ul-drinks h1 {
+	text-align: center;
+	margin: 2%;
+	font-size: 1.5rem;
+}
+
+.clc-drinks .menu-item .ul-drinks ul li {
+	margin: 4%;
+}
+
+@media (min-width: 600px) {
+	.clc-drinks .menu-item .ul-drinks ul li {
+		margin: 10%;
+	}
+}
+
+.clc-drinks .menu-item .ul-drinks ul li .price {
+	float: right;
+}
+
+/* 1. Main Layout ================================= */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	min-height: 100%;
+	background-color: #262626;
+}
+
+body {
+	background-color: #E7D3C4;
+}
+
+/* Page 1. Content ================================= */
+/* *. header & nav see @import header ========= */
 .cta-wrapper {
 	width: 100%;
 	height: 450px;
@@ -310,38 +275,41 @@ header nav ul li {
 	background-size: cover;
 	position: relative;
 	top: 0px;
-}
-
-.cta-wrapper .hdr-cta {
-	position: relative;
-	width: 100%;
-	top: 50%;
-}
-
-.cta-wrapper .hdr-cta h1 {
-	width: 100%;
-	color: #ffffff;
-	font-size: 1rem;
-	text-align: center;
+	font-family: "Montserrat", sans-serif;
 }
 
 @media (min-width: 600px) {
-	.cta-wrapper .hdr-cta h1 {
-		width: 100%;
-		font-size: 2rem;
+	.cta-wrapper {
+		background-position: center;
 	}
 }
 
-.cta-wrapper .hdr-cta .hdr-bttn {
+@media (min-width: 1024px) {
+	.cta-wrapper {
+		height: 650px;
+	}
+}
+
+.cta-wrapper h1 {
+	width: 100%;
+	color: #ffffff;
+	font-size: 1.5rem;
+	text-align: center;
+	position: absolute;
+	top: 60%;
+}
+
+.cta-wrapper .hdr-bttn {
 	width: 100%;
 	display: -webkit-box;
 	display: flex;
 	-webkit-box-pack: center;
 	        justify-content: center;
-	margin: 10% 0;
+	position: absolute;
+	bottom: 10%;
 }
 
-.cta-wrapper .hdr-cta .hdr-bttn .bgBttn {
+.cta-wrapper .hdr-bttn .bgBttn {
 	background-color: #DD5800;
 	color: #ffffff;
 	width: 50%;
@@ -352,7 +320,7 @@ header nav ul li {
 }
 
 @media (min-width: 600px) {
-	.cta-wrapper .hdr-cta .hdr-bttn .bgBttn {
+	.cta-wrapper .hdr-bttn .bgBttn {
 		width: 25%;
 	}
 }
@@ -376,9 +344,22 @@ header nav ul li {
 	.clc-body .our-story-img {
 		display: block;
 		width: 50%;
-		height: 340px;
-		background-image: url(/dist/img/latteCloseup.jpg);
-		background-size: cover;
+	}
+	.clc-body .our-story-img img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.clc-body .our-story-img {
+		width: 40%;
+	}
+}
+
+@media (min-width: 1360px) {
+	.clc-body .our-story-img {
+		width: 30%;
 	}
 }
 
@@ -388,17 +369,40 @@ header nav ul li {
 	}
 }
 
+@media (min-width: 1024px) {
+	.clc-body .our-story {
+		width: 60%;
+	}
+}
+
+@media (min-width: 1360px) {
+	.clc-body .our-story {
+		width: 70%;
+	}
+}
+
 .clc-body .our-story h1 {
-	font-size: 1.3rem;
+	font-size: 2rem;
 	font-weight: bold;
 	color: #472716;
 	text-align: center;
-	margin: 10%;
+	margin: 8%;
+	font-family: "Zilla Slab", serif;
 }
 
 .clc-body .our-story p {
 	margin: 6%;
 	font-size: 1rem;
+	line-height: 1.5rem;
+	font-family: "Montserrat", sans-serif;
+	color: #6f6a6a;
+}
+
+@media (min-width: 1360px) {
+	.clc-body .our-story p {
+		width: 60%;
+		margin: 2% auto;
+	}
 }
 
 footer {

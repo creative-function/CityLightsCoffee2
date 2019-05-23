@@ -1,0 +1,85 @@
+header{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	background-color: none;
+	// position: absolute;
+	z-index: 1;
+	
+	nav{
+		background-color: $clcBlack; opacity: .9;
+		height: auto;
+		width:100%;
+
+		@media #{$tablet}{
+			display: flex;
+		}
+
+		.logo{
+			
+			@media #{$tablet}{
+				width: 50%;
+			}
+	
+			.clc-logo{
+				margin:0 29%;
+				width:40%;
+
+				@media #{$tablet}{
+					margin:3%;
+					width:35%;
+				}
+
+				@media #{$desktop}{
+					width:30%;
+				}
+
+				@media #{$XLdesktop}{
+					width:25%;
+				}
+			}
+			
+		}
+
+		ul{
+			font-size:1.2rem;
+			font-family: $clcZilla;
+			font-weight: lighter;
+			margin:2%;
+			
+			
+			@media #{$tablet}{
+				width: 50%;
+				display: flex;
+				justify-content: space-around;
+			}
+
+			@media #{$desktop}{
+				justify-content: space-between;
+			}
+
+			@media #{$desktop}{
+				justify-content: space-evenly;
+			}
+			
+			a{
+				text-decoration: none;
+			}
+			li{
+				margin-bottom:5%;
+				text-align: center;
+				color:white;
+				
+
+				@media #{$tablet}{
+					border-bottom:1px solid white;
+				}
+				
+			}
+
+		}
+		
+	}
+}

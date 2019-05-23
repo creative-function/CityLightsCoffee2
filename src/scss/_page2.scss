@@ -1,128 +1,54 @@
+/* Page 2. Content ================================= */
 
-//// imported PAGE 2
-header{
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-
-	nav{
-		background-color: $clcBlack;
-		opacity: .9;
-		height: auto;
-
-		@media #{$tablet}{
-			display: flex;
-		}
-
-		.logo{
-			
-			width:100%;
-			@media #{$tablet}{
-				width: 50%;
-			}
-	
-			.clc-logo{
-				position: relative;
-				left:25%;
-				width:100%;
-
-				@media #{$tablet}{
-					left:0%;
-				}
-			}
-			
-		}
-
-		ul{
-			@media #{$tablet}{
-				width: 50%;
-			}
-
-			li{
-				text-align: center;
-				color:white;
-				margin-bottom:2%;
-
-				@media #{$tablet}{
-					margin:5%;
-					display: inline;
-					float: left;
-				}
-				
-			}
-
-		}
-		
-	}
+/* *. header & nav see @import header ========= */
+ //header posiiton absolute needs to be turned off. 
 
 
-	.hdr-cta{
-		margin: 10% 0;
-
-		h1{
-			margin:0 auto;
-			width: 45%;
-			color:$clcWhite;
-			font-size: 1.5rem;
-			text-align: center;	
-
-			@media #{$tablet}{
-				width:100%;
-				font-size: 2rem;
-			}
-		}
-	}
-
-	.hdr-bttn{
-		width:100%;
-		display: flex;
-		justify-content: center;
-		margin: 10% 0;
-		
-		.bgBttn{
-			background-color: $clcOrange;
-			color: $clcWhite;
-			width:50%;
-			font-size: 1rem;
-			padding:2%;
-			border-radius: 5%;
-			border: 1px solid darkorange;
-
-			@media #{$tablet}{
-				width:25%;
-			}
-		}
-	}
-}
 
 .clc-drinks{
-	 
+	margin-top:20%;
 	display: flex;
 	flex-direction: column;
 	margin: 5%;
 
+	@media #{$tablet}{
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+
+	// @media #{$desktop}{
+	// 	height: 650px;
+	// }
+	
+
 	.menu-item{
-		
-		
 		width: 100%;
-		
+
+		@media #{$tablet}{
+			display: flex;
+			flex-direction: row;
+		}
 
 		.img-drinks{
-			
 			background-color: $clcWhite;
-	
+			
+			@media #{$tablet}{
+				width:50%; 
+			}
 			img{
-				
 				width: 100%;
+
 			}
 		}
 	
 		.ul-drinks{
 			margin:3%;
 			padding: 2%;
-			
+
+			@media #{$tablet}{
+				width:50%; 
+				margin:0%;
+			}
 
 			h1{
 				text-align: center;
@@ -134,6 +60,10 @@ header{
 
 				li{
 					margin:4%;
+					
+					@media #{$tablet}{
+						margin:10%; 
+					}
 
 					.price{
 						float: right;
