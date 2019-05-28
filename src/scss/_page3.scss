@@ -1,0 +1,182 @@
+/* Page 3. Content ================================= */
+
+/* *. header & nav see @import header ========= */
+//header posiiton absolute needs to be turned off. 
+
+.order-page-wrapper{
+
+    @media #{$tablet}{
+        display: flex;    
+    }
+
+   
+    
+
+    .clc-drinks{
+        margin-top:20%;
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+      
+        @media #{$tablet}{
+            width: 50%;
+            margin: 0%;
+            border-right: 4px solid $clcBrown; 
+        }
+    
+        @media #{$desktop}{
+            width: 75%;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        
+        }
+    
+
+        .menu-item{
+            width: 100%;
+    
+            @media #{$tablet}{
+                display: flex;
+                padding: 5%;
+                flex-direction: column;
+            }
+    
+            @media #{$desktop}{
+                margin: 1%;
+                padding: 0%;
+                width:40%;
+                margin-top:5%;
+            }
+    
+            .img-drinks{ 
+                img{
+                    width: 100%;
+                }
+                @media #{$tablet}{
+                    width: 100%;
+                }
+
+             
+            }
+
+            .ul-drinks{
+                margin:3%;
+                padding: 2%;
+    
+                @media #{$tablet}{
+                    width:100%; 
+                    margin:0%;
+                }
+                
+            
+                h1{
+                    text-align: center;
+                    margin:2%;
+                    font-size: 1.5rem;
+                }
+    
+                ul{
+    
+                    li{
+                        margin:4%;
+                        
+                        @media #{$tablet}{
+                            margin:10%; 
+                        }
+    
+                        .price{
+                            float: right;
+                        }
+                    }
+                }
+                
+            }
+        }
+    
+    }
+    
+    .clc-orderForm{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 200vh;
+        margin-top:38%;
+        background-color: $clcBlackFade;
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: 1;
+    
+        @media #{$tablet}{
+            height: 100%;
+            width: 50%;
+            position: relative;
+            margin: 0%;
+            margin-top:0%;
+            background-color:$clcTan;
+        }
+
+        @media #{$desktop}{
+            width: 25%;
+            
+        }
+    
+        .your-cart{
+            position: sticky;
+            top: 0;
+            background-color: $clcTan;
+            width: 70%;
+            margin: 0 auto;
+            margin-top:5%;
+            padding: 2%;
+            border-radius: 10%;
+            border: 2px solid $clcBrown; 
+
+            @media #{$tablet}{
+                width: 100%;
+                margin-top:0%;
+                border-radius: 0%;
+                border: none; 
+               
+            }
+
+            @media #{$desktop}{
+                margin-top:5%;
+            }
+    
+            h1{
+                text-align: center;
+                margin:2%;
+                font-size: 1.5rem;
+            }
+    
+            li{
+                margin: 10%;
+                list-style: none;
+            }
+    
+            .price{
+                float: right;
+            }
+    
+            .order-bttn{
+                width:100%;
+                display: flex;
+                justify-content: center;
+                position: relative;
+                bottom:3%;
+        
+                .smBttn{
+                    background-color: $clcOrange;
+                    color: $clcWhite;
+                    width:50%;
+                    font-size: 1rem;
+                    padding:2%;
+                    border-radius: 5%;
+                    border: 1px solid darkorange;
+                }
+            }   
+        }  
+    }
+ }

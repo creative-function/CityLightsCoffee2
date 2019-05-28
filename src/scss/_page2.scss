@@ -16,6 +16,10 @@
 		justify-content: space-evenly;
 	}
 
+	@media #{$desktop}{
+		flex-direction: row;
+	}
+
 	// @media #{$desktop}{
 	// 	height: 650px;
 	// }
@@ -29,8 +33,12 @@
 			flex-direction: row;
 		}
 
+		@media #{$desktop}{
+			display: flex;
+			flex-direction: column;
+		}
+
 		.img-drinks{
-			background-color: $clcWhite;
 			
 			@media #{$tablet}{
 				width:50%; 
