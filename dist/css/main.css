@@ -267,6 +267,10 @@ header nav ul li {
 
 /* Page 3. Content ================================= */
 /* *. header & nav see @import header ========= */
+.order-page-wrapper {
+	position: relative;
+}
+
 @media (min-width: 600px) {
 	.order-page-wrapper {
 		display: -webkit-box;
@@ -275,13 +279,13 @@ header nav ul li {
 }
 
 .order-page-wrapper .clc-drinks {
-	margin-top: 20%;
 	display: -webkit-box;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	        flex-direction: column;
-	margin: 5%;
+	padding: 5%;
+	margin: 0;
 }
 
 @media (min-width: 600px) {
@@ -304,12 +308,12 @@ header nav ul li {
 	}
 }
 
-.order-page-wrapper .clc-drinks .menu-item {
+.order-page-wrapper .clc-drinks .menu-item-pg3 {
 	width: 100%;
 }
 
 @media (min-width: 600px) {
-	.order-page-wrapper .clc-drinks .menu-item {
+	.order-page-wrapper .clc-drinks .menu-item-pg3 {
 		display: -webkit-box;
 		display: flex;
 		padding: 5%;
@@ -320,54 +324,58 @@ header nav ul li {
 }
 
 @media (min-width: 1024px) {
-	.order-page-wrapper .clc-drinks .menu-item {
+	.order-page-wrapper .clc-drinks .menu-item-pg3 {
 		margin: 1%;
 		padding: 0%;
 		width: 40%;
 		margin-top: 5%;
 	}
-}
-
-.order-page-wrapper .clc-drinks .menu-item .img-drinks img {
-	width: 100%;
-}
-
-@media (min-width: 600px) {
-	.order-page-wrapper .clc-drinks .menu-item .img-drinks {
+	.order-page-wrapper .clc-drinks .menu-item-pg3 .img-drinks-pg3 img {
 		width: 100%;
 	}
 }
 
-.order-page-wrapper .clc-drinks .menu-item .ul-drinks {
-	margin: 3%;
-	padding: 2%;
+@media (min-width: 1024px) and (min-width: 600px) {
+	.order-page-wrapper .clc-drinks .menu-item-pg3 .img-drinks-pg3 {
+		width: 100%;
+	}
 }
 
-@media (min-width: 600px) {
-	.order-page-wrapper .clc-drinks .menu-item .ul-drinks {
+@media (min-width: 1024px) {
+	.order-page-wrapper .clc-drinks .menu-item-pg3 .ul-drinks-pg3 {
+		margin: 3%;
+		padding: 2%;
+	}
+}
+
+@media (min-width: 1024px) and (min-width: 600px) {
+	.order-page-wrapper .clc-drinks .menu-item-pg3 .ul-drinks-pg3 {
 		width: 100%;
 		margin: 0%;
 	}
 }
 
-.order-page-wrapper .clc-drinks .menu-item .ul-drinks h1 {
-	text-align: center;
-	margin: 2%;
-	font-size: 1.5rem;
+@media (min-width: 1024px) {
+	.order-page-wrapper .clc-drinks .menu-item-pg3 .ul-drinks-pg3 h1 {
+		text-align: center;
+		margin: 2%;
+		font-size: 1.5rem;
+	}
+	.order-page-wrapper .clc-drinks .menu-item-pg3 .ul-drinks-pg3 ul li {
+		margin: 4%;
+	}
 }
 
-.order-page-wrapper .clc-drinks .menu-item .ul-drinks ul li {
-	margin: 4%;
-}
-
-@media (min-width: 600px) {
-	.order-page-wrapper .clc-drinks .menu-item .ul-drinks ul li {
+@media (min-width: 1024px) and (min-width: 600px) {
+	.order-page-wrapper .clc-drinks .menu-item-pg3 .ul-drinks-pg3 ul li {
 		margin: 10%;
 	}
 }
 
-.order-page-wrapper .clc-drinks .menu-item .ul-drinks ul li .price {
-	float: right;
+@media (min-width: 1024px) {
+	.order-page-wrapper .clc-drinks .menu-item-pg3 .ul-drinks-pg3 ul li .price {
+		float: right;
+	}
 }
 
 .order-page-wrapper .clc-orderForm {
@@ -376,13 +384,12 @@ header nav ul li {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	        flex-direction: column;
-	width: 100%;
-	height: 200vh;
-	margin-top: 38%;
 	background-color: rgba(38, 38, 38, 0.7);
 	position: absolute;
 	top: 0;
 	left: 0;
+	right: 0;
+	bottom: 0;
 	z-index: 1;
 }
 
