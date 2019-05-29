@@ -80,8 +80,7 @@ header {
 }
 
 header nav {
-	background-color: #262626;
-	opacity: .9;
+	background-color: rgba(38, 38, 38, 0.9);
 	height: auto;
 	width: 100%;
 }
@@ -100,6 +99,7 @@ header nav {
 }
 
 header nav .logo .clc-logo {
+	padding-top: 5%;
 	margin: 0 29%;
 	width: 40%;
 }
@@ -167,6 +167,71 @@ header nav ul li {
 	header nav ul li {
 		border-bottom: 1px solid white;
 	}
+}
+
+footer {
+	background-color: #262626;
+	width: 100%;
+	height: auto;
+	color: #ffffff;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+}
+
+@media (min-width: 600px) {
+	footer {
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		        flex-direction: row;
+		-webkit-box-pack: space-evenly;
+		        justify-content: space-evenly;
+	}
+}
+
+@media (min-width: 1024px) {
+	footer {
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		        flex-direction: row;
+		-webkit-box-pack: space-evenly;
+		        justify-content: space-evenly;
+		position: relative;
+		bottom: 0;
+	}
+}
+
+footer .footr {
+	margin: 5%;
+	align-self: center;
+	text-align: center;
+	line-height: 1.4rem;
+}
+
+footer .footr h1 {
+	margin: 10%;
+	font-family: "Zilla Slab", serif;
+	font-size: 1.5rem;
+	letter-spacing: .5rem;
+}
+
+footer .footr ul {
+	font-family: "Zilla Slab", serif;
+}
+
+footer .footr ul a {
+	text-decoration: none;
+}
+
+footer .footr ul li {
+	margin: 5% 0;
+	color: #ffffff;
 }
 
 /* Page 2. Content ================================= */
@@ -251,7 +316,17 @@ header nav ul li {
 	font-size: 1.5rem;
 }
 
+.clc-drinks .menu-item .ul-drinks ul h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #472716;
+	text-align: center;
+	font-family: "Zilla Slab", serif;
+}
+
 .clc-drinks .menu-item .ul-drinks ul li {
+	font-family: "Montserrat", sans-serif;
+	color: #6f6a6a;
 	margin: 4%;
 }
 
@@ -278,7 +353,7 @@ header nav ul li {
 	}
 }
 
-.order-page-wrapper .clc-drinks {
+.order-page-wrapper .clc-products-pg3 {
 	display: -webkit-box;
 	display: flex;
 	-webkit-box-orient: vertical;
@@ -289,7 +364,7 @@ header nav ul li {
 }
 
 @media (min-width: 600px) {
-	.order-page-wrapper .clc-drinks {
+	.order-page-wrapper .clc-products-pg3 {
 		width: 50%;
 		margin: 0%;
 		border-right: 4px solid #472716;
@@ -297,7 +372,7 @@ header nav ul li {
 }
 
 @media (min-width: 1024px) {
-	.order-page-wrapper .clc-drinks {
+	.order-page-wrapper .clc-products-pg3 {
 		width: 75%;
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
@@ -305,76 +380,6 @@ header nav ul li {
 		flex-wrap: wrap;
 		-webkit-box-pack: space-evenly;
 		        justify-content: space-evenly;
-	}
-}
-
-.order-page-wrapper .clc-drinks .menu-item-pg3 {
-	width: 100%;
-}
-
-@media (min-width: 600px) {
-	.order-page-wrapper .clc-drinks .menu-item-pg3 {
-		display: -webkit-box;
-		display: flex;
-		padding: 5%;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		        flex-direction: column;
-	}
-}
-
-@media (min-width: 1024px) {
-	.order-page-wrapper .clc-drinks .menu-item-pg3 {
-		margin: 1%;
-		padding: 0%;
-		width: 40%;
-		margin-top: 5%;
-	}
-	.order-page-wrapper .clc-drinks .menu-item-pg3 .img-drinks-pg3 img {
-		width: 100%;
-	}
-}
-
-@media (min-width: 1024px) and (min-width: 600px) {
-	.order-page-wrapper .clc-drinks .menu-item-pg3 .img-drinks-pg3 {
-		width: 100%;
-	}
-}
-
-@media (min-width: 1024px) {
-	.order-page-wrapper .clc-drinks .menu-item-pg3 .ul-drinks-pg3 {
-		margin: 3%;
-		padding: 2%;
-	}
-}
-
-@media (min-width: 1024px) and (min-width: 600px) {
-	.order-page-wrapper .clc-drinks .menu-item-pg3 .ul-drinks-pg3 {
-		width: 100%;
-		margin: 0%;
-	}
-}
-
-@media (min-width: 1024px) {
-	.order-page-wrapper .clc-drinks .menu-item-pg3 .ul-drinks-pg3 h1 {
-		text-align: center;
-		margin: 2%;
-		font-size: 1.5rem;
-	}
-	.order-page-wrapper .clc-drinks .menu-item-pg3 .ul-drinks-pg3 ul li {
-		margin: 4%;
-	}
-}
-
-@media (min-width: 1024px) and (min-width: 600px) {
-	.order-page-wrapper .clc-drinks .menu-item-pg3 .ul-drinks-pg3 ul li {
-		margin: 10%;
-	}
-}
-
-@media (min-width: 1024px) {
-	.order-page-wrapper .clc-drinks .menu-item-pg3 .ul-drinks-pg3 ul li .price {
-		float: right;
 	}
 }
 
@@ -415,12 +420,77 @@ header nav ul li {
 	position: sticky;
 	top: 0;
 	background-color: #E7D3C4;
-	width: 70%;
+	width: 80%;
 	margin: 0 auto;
 	margin-top: 5%;
-	padding: 2%;
-	border-radius: 10%;
+	padding: 5%;
+	border-radius: 10px;
 	border: 2px solid #472716;
+}
+
+.order-page-wrapper .clc-orderForm .your-cart h1 {
+	text-align: center;
+	margin: 5%;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #472716;
+	font-family: "Zilla Slab", serif;
+}
+
+.order-page-wrapper .clc-orderForm .your-cart input {
+	width: 50px;
+	margin-right: 15px;
+}
+
+.order-page-wrapper .clc-orderForm .your-cart .order {
+	display: -webkit-box;
+	display: flex;
+	margin-bottom: 5%;
+}
+
+.order-page-wrapper .clc-orderForm .your-cart .order label {
+	font-family: "Montserrat", sans-serif;
+	color: #6f6a6a;
+	-webkit-box-flex: 1;
+	        flex-grow: 1;
+}
+
+.order-page-wrapper .clc-orderForm .your-cart .order .price {
+	font-family: "Montserrat", sans-serif;
+	color: #6f6a6a;
+	font-weight: bold;
+}
+
+.order-page-wrapper .clc-orderForm .your-cart .order-total {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
+	margin: 5% 0;
+	color: #472716;
+	font-family: "Zilla Slab", serif;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.order-page-wrapper .clc-orderForm .your-cart .order-bttn {
+	width: 100%;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: center;
+	        justify-content: center;
+	position: relative;
+	bottom: 3%;
+}
+
+.order-page-wrapper .clc-orderForm .your-cart .order-bttn .smBttn {
+	background-color: #DD5800;
+	color: #ffffff;
+	width: 50%;
+	font-size: 1rem;
+	padding: 2%;
+	border-radius: 5%;
+	border: 1px solid darkorange;
 }
 
 @media (min-width: 600px) {
@@ -438,35 +508,81 @@ header nav ul li {
 	}
 }
 
-.order-page-wrapper .clc-orderForm .your-cart h1 {
-	text-align: center;
-	margin: 2%;
-	font-size: 1.5rem;
-}
-
-.order-page-wrapper .clc-orderForm .your-cart li {
-	margin: 10%;
-	list-style: none;
-}
-
-.order-page-wrapper .clc-orderForm .your-cart .price {
-	float: right;
-}
-
-.order-page-wrapper .clc-orderForm .your-cart .order-bttn {
+.product-pg3 {
 	width: 100%;
+	padding-bottom: 5%;
+}
+
+@media (min-width: 600px) {
+	.product-pg3 {
+		display: -webkit-box;
+		display: flex;
+		padding: 5%;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		        flex-direction: column;
+	}
+}
+
+@media (min-width: 1024px) {
+	.product-pg3 {
+		margin: 1%;
+		padding: 0%;
+		width: 40%;
+		margin-top: 5%;
+	}
+}
+
+.product-pg3 .product-img {
+	width: 100%;
+	margin-bottom: 5%;
+}
+
+.product-pg3 .product-info .prod-name {
 	display: -webkit-box;
 	display: flex;
-	-webkit-box-pack: center;
-	        justify-content: center;
-	position: relative;
-	bottom: 3%;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
+	margin-bottom: 5%;
 }
 
-.order-page-wrapper .clc-orderForm .your-cart .order-bttn .smBttn {
+.product-pg3 .product-info .prod-name .blend-name h1 {
+	font-family: "Zilla Slab", serif;
+	color: #6f6a6a;
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
+.product-pg3 .product-info .prod-name .blend-name h2 {
+	font-family: "Montserrat", sans-serif;
+	color: #6f6a6a;
+	margin-top: 5%;
+}
+
+.product-pg3 .product-info .prod-name .blend-bean {
+	width: 30px;
+}
+
+.product-pg3 .product-info .prod-price {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: baseline;
+	        align-items: baseline;
+}
+
+.product-pg3 .product-info .prod-price h1 {
+	font-family: "Zilla Slab", serif;
+	color: #6f6a6a;
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
+.product-pg3 .product-info .prod-price .cart-button {
 	background-color: #DD5800;
 	color: #ffffff;
-	width: 50%;
+	width: 150px;
 	font-size: 1rem;
 	padding: 2%;
 	border-radius: 5%;
@@ -508,6 +624,7 @@ body {
 @media (min-width: 1024px) {
 	.cta-wrapper {
 		height: 650px;
+		background-image: url("../img/lee-campbell2.jpg");
 	}
 }
 
@@ -536,7 +653,7 @@ body {
 	width: 50%;
 	font-size: 1rem;
 	padding: 2%;
-	border-radius: 5%;
+	border-radius: 10px;
 	border: 1px solid darkorange;
 }
 
@@ -624,60 +741,6 @@ body {
 		width: 60%;
 		margin: 2% auto;
 	}
-}
-
-footer {
-	background-color: #262626;
-	opacity: .9;
-	width: 100%;
-	height: auto;
-	color: #ffffff;
-	display: -webkit-box;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	        flex-direction: column;
-}
-
-@media (min-width: 600px) {
-	footer {
-		display: -webkit-box;
-		display: flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		        flex-direction: row;
-		-webkit-box-pack: space-evenly;
-		        justify-content: space-evenly;
-	}
-}
-
-@media (min-width: 1024px) {
-	footer {
-		display: -webkit-box;
-		display: flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		        flex-direction: row;
-		-webkit-box-pack: space-evenly;
-		        justify-content: space-evenly;
-		position: relative;
-		bottom: 0;
-	}
-}
-
-footer .footr {
-	margin: 5%;
-	align-self: center;
-}
-
-footer .footr h1 {
-	text-align: center;
-	margin: 10%;
-}
-
-footer .footr li {
-	margin: 5% 0;
-	color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */

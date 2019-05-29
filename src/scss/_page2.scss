@@ -65,8 +65,17 @@
 			}
 
 			ul{
+				h1{
+					font-size: 2rem;
+					font-weight: bold;
+					color:$clcBrown;
+					text-align: center;
+					font-family: $clcZilla;
+				}
 
 				li{
+					font-family: $clcMont;
+					color:$clcGray;
 					margin:4%;
 					
 					@media #{$tablet}{

@@ -9,7 +9,7 @@ header{
 	z-index: 1;
 	
 	nav{
-		background-color: $clcBlack; opacity: .9;
+		background-color: $clcBlackFade2;
 		height: auto;
 		width:100%;
 
@@ -19,11 +19,13 @@ header{
 
 		.logo{
 			
+
 			@media #{$tablet}{
 				width: 50%;
 			}
 	
 			.clc-logo{
+				padding-top:5%; 
 				margin:0 29%;
 				width:40%;
 
@@ -82,4 +84,59 @@ header{
 		}
 		
 	}
+}
+
+
+footer{
+	background-color: $clcBlack;
+	width:100%;
+	height: auto;
+	color:$clcWhite;
+	display: flex;
+	flex-direction: column;
+	// position: absolute;
+	// bottom:0;
+	
+	@media #{$tablet}{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	@media #{$desktop}{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		position: relative;
+		bottom:0;
+	}
+
+	.footr{
+		margin:5%;
+		align-self: center;	
+		text-align: center;
+		line-height: 1.4rem;
+
+		h1{
+			margin:10%;
+			font-family: $clcZilla;
+			font-size: 1.5rem;
+			letter-spacing: .5rem;
+		}
+
+		ul{
+			font-family: $clcZilla;
+			
+			a{
+				text-decoration: none;
+			}
+
+			li{
+				margin:5% 0;
+				color:$clcWhite;
+				
+			}
+		}
+	}
+	
 }

@@ -4,6 +4,7 @@ $clcBrown: #472716;
 $clcTan: #E7D3C4;
 $clcBlack: #262626;
 $clcBlackFade: rgba(38, 38, 38, 0.7);
+$clcBlackFade2: rgba(38, 38, 38, 0.9);
 $clcWhite: #ffffff;
 $clcGray:rgb(111, 106, 106);
 
@@ -11,5 +12,10 @@ $tablet: "(min-width: 600px)";
 $desktop: "(min-width: 1024px)";
 $XLdesktop: "(min-width: 1360px)";
 
-$clcMont: 'Montserrat', sans-serif;
-$clcZilla: 'Zilla Slab', serif
+$clcMont: 'Montserrat', sans-serif; //body
+$clcZilla: 'Zilla Slab', serif; //heading
+
+// //bean colors
+// light- #DBB47E
+// med- #8D5132
+// dark- #472716

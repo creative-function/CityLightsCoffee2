@@ -55,6 +55,8 @@ body {
 
 	@media #{$desktop}{
 		height: 650px;
+		background-image: url("../img/lee-campbell2.jpg");
+
 	}
 	
 	h1{
@@ -79,7 +81,7 @@ body {
 			width:50%;
 			font-size: 1rem;
 			padding:2%;
-			border-radius: 5%;
+			border-radius: 10px;
 			border: 1px solid darkorange;
 
 			@media #{$tablet}{
@@ -164,47 +166,6 @@ body {
 
 
 
-footer{
-	background-color: $clcBlack;
-	opacity: .9;
-	width:100%;
-	height: auto;
-	color:$clcWhite;
-	display: flex;
-	flex-direction: column;
-	// position: absolute;
-	// bottom:0;
-	
-	@media #{$tablet}{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-	}
-
-	@media #{$desktop}{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		position: relative;
-		bottom:0;
-	}
-
-	.footr{
-		margin:5%;
-		align-self: center;	
-
-		h1{
-			text-align: center;
-			margin:10%;
-		}
-
-		li{
-			margin:5% 0;
-			color:$clcWhite;
-		}
-	}
-	
-}
 
 
 
