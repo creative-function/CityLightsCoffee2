@@ -1,15 +1,42 @@
 /* Page 2. Content ================================= */
 
 /* *. header & nav see @import header ========= */
- //header posiiton absolute needs to be turned off. 
+//header posiiton absolute needs to be turned off. 
 
+.wallpaper{
+	width:100%;
+	height: 300px;
+	background-image: url("../img/mike-kenneally-46284-unsplash.jpg");
+	background-size: cover;
+	position: relative; 
+	top:0;
+	z-index: -99;
+	padding-top:15%;
 
+	h1{
+		width: 100%;
+		color:$clcWhite;
+		font-size: 1.5rem;
+		text-align: center;	
+		position: absolute;
+		bottom:10%;
+	}
+
+	@media #{$tablet}{
+		height: 125px;
+
+		h1{
+			font-size: 1.8rem;
+		}
+	}
+}
 
 .clc-drinks{
-	margin-top:20%;
+
+	padding:5%;
 	display: flex;
 	flex-direction: column;
-	margin: 5%;
+	//margin: 5%;
 
 	@media #{$tablet}{
 		flex-direction: column;
@@ -27,6 +54,7 @@
 
 	.menu-item{
 		width: 100%;
+		margin-bottom: 2%;
 
 		@media #{$tablet}{
 			display: flex;
@@ -36,27 +64,29 @@
 		@media #{$desktop}{
 			display: flex;
 			flex-direction: column;
+			margin: 2%;
 		}
 
 		.img-drinks{
 			
-			@media #{$tablet}{
-				width:50%; 
-			}
 			img{
 				width: 100%;
 
 			}
+
+			@media #{$tablet}{
+				width:50%; 
+			}
+
+			@media #{$desktop}{
+				width:100%; 
+			}
+			
 		}
 	
 		.ul-drinks{
 			margin:3%;
 			padding: 2%;
-
-			@media #{$tablet}{
-				width:50%; 
-				margin:0%;
-			}
 
 			h1{
 				text-align: center;
@@ -79,13 +109,21 @@
 					margin:4%;
 					
 					@media #{$tablet}{
-						margin:10%; 
+						padding:2%; 
 					}
 
 					.price{
 						float: right;
 					}
 				}
+			}
+
+			@media #{$tablet}{
+				width:50%; 
+				margin:0%;
+			}
+			@media #{$desktop}{
+				width:100%; 
 			}
 			
 		}

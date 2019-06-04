@@ -3,6 +3,63 @@
 /* *. header & nav see @import header ========= */
 //header posiiton absolute needs to be turned off. 
 
+.wallpaper-page3{
+	width:100%;
+	height: 420px;
+	background-image: url("../img/nathan-dumlao-1555019-unsplash.jpg");
+    background-size: cover;
+    background-position: 0 30%;
+	position: relative; 
+	top:0;
+	z-index: -99;
+	padding-top:15%;
+
+	h1{
+		width: 100%;
+		color:$clcWhite;
+		font-size: 1.5rem;
+		text-align: center;	
+		position: absolute;
+        bottom:30%;
+        
+        @media #{$tablet}{
+            bottom:10%; 
+        }
+    }
+    
+    .hdr-bttn-pg3{
+		width:100%;
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		bottom:10%;
+		
+		.bgBttn-pg3{
+			background-color: $clcOrange;
+			color: $clcWhite;
+			width:50%;
+			font-size: 1rem;
+			padding:2%;
+			border-radius: 10px;
+			border: 1px solid rgb(147, 83, 6);
+
+			@media #{$tablet}{
+                display: none; 
+			}
+		}
+	}
+
+	@media #{$tablet}{
+        
+        background-image: url("../img/nathan-dumlao2.jpg");
+        height: 125px;
+
+		h1{
+			font-size: 1.8rem;
+		}
+	}
+}
+
 .order-page-wrapper{
     position: relative ;
     @media #{$tablet}{
@@ -123,7 +180,7 @@
                     font-size: 1rem;
                     padding:2%;
                     border-radius: 10px;
-                    border: 1px solid darkorange;
+                    border: 1px solid rgb(147, 83, 6);
                 }
             } 
             
@@ -212,7 +269,7 @@
                 font-size: 1rem;
                 padding:2%;
                 border-radius: 10px;
-                border: 1px solid darkorange;
+                border: 1px solid rgb(147, 83, 6);
             }
         }
     }
